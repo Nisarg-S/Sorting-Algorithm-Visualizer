@@ -1,0 +1,24 @@
+{% extends "sort.html" %}
+
+{% block title %}Bubble Sort{% endblock %}
+
+{% block body %}
+  <script type="text/javascript" src="../static/bubble.js"></script>
+  <footer class="w-full pin-b text-center border-t border-grey p-4">
+    <a id=new onclick=reset()>
+      <button id=new_button
+        class="content-center w-1/6 bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-5 px-4 rounded center m-2 ">
+        Create New Array
+      </button>
+    </a>
+    <a id=array_size class="m-4 pt-10 content-center" , onchange=reset()>
+      <input type="range" min="10" max="30" value="10" step="1" class="slider" id="size" style="width:16.66667%">
+    </a>
+    <a id=visual onclick=sort()>
+      <button id=visual_button
+        class="content-center w-1/6 bg-green-500 hover:bg-green-600 text-white font-bold py-5 px-4 rounded center m-2">
+        Visualize Sort
+      </button>
+    </a>
+  </footer>
+{% endblock %}
