@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title id="title">{% block title %}{% endblock %}</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="/static/sort.css" rel="stylesheet" />
+    <script type="text/javascript" src="/static/sort.js"></script>
+  </head>
+
+  <body class="flex flex-col min-h-screen">
+    <!--Header-->
+    <nav class="bg-white px-8 pt-2 shadow-md">
+      <div class="-mb-px flex justify-center">
+        <a
+          id="Home"
+          class="no-underline text-teal-dark border-b-2 border-transparent uppercase tracking-wide font-bold text-xs py-3 mr-8"
+          href="/"
+        >
+          Home
+        </a>
+        <a
+          id="Bubble Sort"
+          class="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide font-bold text-xs py-3 mr-8"
+          href="/bubble"
+        >
+          Bubble
+        </a>
+        <a
+          id="Insertion Sort"
+          class="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide font-bold text-xs py-3 mr-8"
+          href="/insertion"
+        >
+          Insertion
+        </a>
+        <a
+          id="Quick Sort"
+          class="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide font-bold text-xs py-3 mr-8"
+          href="/quick"
+        >
+          Quick
+        </a>
+        <a
+          id="Merge Sort"
+          class="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide font-bold text-xs py-3"
+          href="/merge"
+        >
+          Merge
+        </a>
+      </div>
+    </nav>
+    <div id="main" class="flex-grow" style="padding-left: 10vw"></div>
+    <style>
+      .arrayElement {
+        display: inline-block;
+        height: 80vh;
+      }
+    </style>
+    <!--Footer-->
+    {% block body %} {% endblock %}
+  </body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "Sorting-Algorithm-Visualizer",
+  "version": "1.0.0",
+  "description": "This is a simple Flask app to help novice programmers visualize sorting algorithms. It will be avalible on a hosted domain soon.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nisarg-S/Sorting-Algorithm-Visualizer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nisarg-S/Sorting-Algorithm-Visualizer/issues"
+  },
+  "homepage": "https://github.com/Nisarg-S/Sorting-Algorithm-Visualizer#readme",
+  "devDependencies": {
+    "firebase-tools": "^9.2.2"
+  }
+}
